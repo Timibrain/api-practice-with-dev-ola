@@ -4,9 +4,9 @@ const ejs = require('ejs')
 const PORT = 3000
 
 
-app.get("/", (req,res)=>{
-    res.sendFile(`${__dirname+"/index.html"}`)
-})
+// app.get("/", (req,res)=>{
+//     res.sendFile(`${__dirname+"/index.html"}`)
+// })
 
 const students = [
     { name: "Samson", age: 24, school: 'lautech' ,img: "images/ai-feature_1920.png"},
@@ -20,7 +20,7 @@ const students = [
     { name: "Nathaniel", age: 22, school: 'KwaraState', img: "images/icon-cs-women-d-7.png"},
 ]
 
-app.get("/api",(req, res)=>{
+app.get("/",(req, res)=>{
    try{
     res.status(201).send({students})
    }
