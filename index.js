@@ -20,7 +20,7 @@ const students = [
     { name: "Nathaniel", age: 22, school: 'KwaraState', img: "images/icon-cs-women-d-7.png"},
 ]
 
-app.get("/api",(req, res)=>{
+app.get("/",(req, res)=>{
    try{
     res.status(201).send({students})
    }
